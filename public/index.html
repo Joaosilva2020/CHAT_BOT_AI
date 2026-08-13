@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agente IA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <strong>Agente IA</strong>
+        <span class="status" id="status">pronto</span>
+      </header>
+
+      <section class="hero" id="hero" aria-label="Inicio do chat">
+        <h1>Como posso ajudar?</h1>
+      </section>
+
+      <section class="chat" aria-label="Chat com agente de IA">
+        <div class="messages" id="messages"></div>
+      </section>
+
+      <form class="composer" id="chat-form">
+        <input
+          id="message-input"
+          name="mensagem"
+          type="text"
+          autocomplete="off"
+          placeholder="Pergunte alguma coisa"
+          required
+        />
+        <button type="submit" aria-label="Enviar mensagem">Enviar</button>
+      </form>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
